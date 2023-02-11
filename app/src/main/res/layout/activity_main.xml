@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width= "match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de grados"
+        android:layout_margin="20dp"
+        android:textSize="25dp"/>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="C°"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etC"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="F°"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etF"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="K°"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etK"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnGC"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#858080"
+            android:text="°C"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnGF"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#858080"
+            android:text="°F"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnGK"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#858080"
+            android:text="°K"
+            android:textSize="18dp" />
+    </TableRow>
+
+</TableLayout>
